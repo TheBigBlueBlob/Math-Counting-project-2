@@ -4,7 +4,7 @@ from random import shuffle, randint
 
 failures = 0
 heads = 0
-trials = 50000
+trials = 100000
 """
 for i in range(trials):
     
@@ -21,5 +21,5 @@ for i in range(trials):
     #print('Heads =', heads,' Tails=', trials-heads)
 
 print('Heads =', heads,' Tails=', trials-heads)
-print ((trials-failures)/trials*100, '%')
+print ((trials-heads)/trials*100, '%')
 
