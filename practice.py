@@ -64,7 +64,7 @@ for i in range(trials3):
     
     shuffle(siblings)
     print(siblings)
-    for j in range(9):
+    for j in range(7):
         if siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'AABB' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'AACC' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'AADD' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'AAEE' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'BBAA' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'BBCC' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'BBDD' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'BBEE' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'CCAA' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'CCBB' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'CCDD' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'CCEE' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'DDAA' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'DDBB' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'DDCC' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'DDEE' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'EEAA' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'EEBB' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'EECC' or siblings[j] + siblings[j+1] + siblings[j+2] + siblings[j+3] == 'EEDD':
             failures3+=1
             break
@@ -74,6 +74,6 @@ for i in range(trials3):
 
 
 
-print(failures3/trials3)
+#print(failures3/trials3)
 
 
