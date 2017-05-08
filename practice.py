@@ -74,6 +74,6 @@ for i in range(trials3):
 
 
 
-#print(failures3/trials3)
+print(failures3/trials3)
 
 
