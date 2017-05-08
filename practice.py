@@ -14,6 +14,8 @@ for i in range(trials):
         if cards[j] + cards[j+1] + cards[j+2] + cards[j+3] == 'JJJJ' or cards[j] + cards[j+1] + cards[j+2] + cards[j+3] == 'QQQQ' or cards[j] + cards[j+1] + cards[j+2] + cards[j+3] == 'KKKK':
             failures+=1
             break
+
+print ((trials-failures)/trials*100, '%')
 """
 for i in range(trials):
     
@@ -22,5 +24,22 @@ for i in range(trials):
 
 print('Heads =', heads,' Tails=', trials-heads)
 """
-print ((trials-failures)/trials*100, '%')
 
+
+people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
+
+failures2 = 0
+trials2 = 10
+
+
+
+for i in range(trials2):
+    
+    shuffle(people)
+    #print(cards)
+    for j in range(12):
+        if cards[j] + cards[j+1] + cards[j+2] + cards[j+3] == 'JJJJ' :
+            failures2+=1
+            break
+        
+print ((trials2-failures2)/trials2*100, '%')
