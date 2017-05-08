@@ -62,6 +62,6 @@ for i in range(trials3):
             failures3+=1
             break
         
-print(failures3)
+print(failures3/trials3)
 
 
