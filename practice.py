@@ -40,7 +40,7 @@ for i in range(trials2):
     shuffle(people)
     print(people)
     for j in range(13):
-        if people[j] + people[j+1] + people[j+2] == 'TTT':
+        if people[j] + people[j+1] + people[j+2] == 'TTT' or people[j] + people[j+1] + people[j+2] == 'TT' or people[j] + people[j+1] + people[j+2] == 'ST' or people[j] + people[j+1] + people[j+2] == 'TS':
             failures2+=1
             break
         
