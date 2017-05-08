@@ -40,10 +40,19 @@ for i in range(trials2):
     shuffle(people)
     print(people)
     for j in range(13):
-        if people[j] + people[j+1] + people[j+2] == 'TTT' or people[j] + people[j+1] + people[j+2] == 'TT' or people[j] + people[j+1] + people[j+2] == 'ST' or people[j] + people[j+1] + people[j+2] == 'TS':
+        if people[j] + people[j+1] + people[j+2] == 'TST' or people[j] + people[j+1] == 'TT':
             failures2+=1
             break
+   
+    for j in range(12,13):
+        if  people[j] + people[j+1] == 'TS':
+            failures2+=1
+            break     
         
+    for j in range(1):
+        if people[j] + people[j+1] == 'ST':
+            failures2+=1
+            break
 print ((trials2-failures2)/trials2*100, '%')
 
 siblings = ['A','A','B','B','C','C','D','D','E','E']
