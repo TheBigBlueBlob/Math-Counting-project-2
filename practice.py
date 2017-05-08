@@ -49,14 +49,14 @@ print ((trials2-failures2)/trials2*100, '%')
 siblings = ['A','A','B','B','C','C','D','D','E','E']
 
 failures3 = 0
-trials3 = 1000
+trials3 = 10
 
 
 
 for i in range(trials3):
     
     shuffle(siblings)
-    #print(cards)
+    print(siblings)
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'AA' or siblings[j] + siblings[j+1] == 'BB' or siblings[j] + siblings[j+1] == 'CC' or siblings[j] + siblings[j+1] == 'DD' or siblings[j] + siblings[j+1] == 'EE':
             failures3+=1
