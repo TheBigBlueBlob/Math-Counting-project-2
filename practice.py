@@ -58,10 +58,30 @@ for i in range(trials3):
     shuffle(siblings)
     print(siblings)
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'AA' or siblings[j] + siblings[j+1] == 'BB' or siblings[j] + siblings[j+1] == 'CC' or siblings[j] + siblings[j+1] == 'DD' or siblings[j] + siblings[j+1] == 'EE':
+        if siblings[j] + siblings[j+1] == 'AA':
             failures3+=1
             break
-        
+    for j in range(8):
+        if siblings[j] + siblings[j+1] == 'BB':
+            failures3+=1
+            break
+    for j in range(8):
+        if siblings[j] + siblings[j+1] == 'CC':
+            failures3+=1
+            break
+    for j in range(8):
+        if siblings[j] + siblings[j+1] == 'DD':
+            failures3+=1
+            break
+    for j in range(8):
+        if siblings[j] + siblings[j+1] == 'EE':
+            failures3+=1
+            break
+
+
+
+
+
 print(failures3/trials3)
 
 
