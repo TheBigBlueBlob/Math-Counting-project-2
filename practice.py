@@ -4,7 +4,7 @@ from random import shuffle, randint
 
 failures = 0
 heads = 0
-trials = 100000
+trials = 1000
 """
 for i in range(trials):
     
