@@ -62,6 +62,6 @@ for i in range(trials3):
             failures3+=1
             break
         
-print ((trials3-failures3)/trials3*100, '%')
+print(failures3)
 
 
