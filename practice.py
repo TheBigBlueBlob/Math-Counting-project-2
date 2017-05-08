@@ -16,7 +16,9 @@ for i in range(trials):
             break
 
 print ((trials-failures)/trials*100, '%')
+
 """
+
 for i in range(trials):
     
     heads += randint(0,1)
@@ -29,7 +31,7 @@ print('Heads =', heads,' Tails=', trials-heads)
 people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
 
 failures2 = 0
-trials2 = 10
+trials2 = 1000
 
 
 
