@@ -37,8 +37,8 @@ for i in range(trials2):
     
     shuffle(people)
     #print(cards)
-    for j in range(12):
-        if cards[j] + cards[j+1] + cards[j+2] + cards[j+3] == 'JJJJ' :
+    for j in range(13):
+        if people[j] + people[j+1] + people[j+2] == 'TTT':
             failures2+=1
             break
         
