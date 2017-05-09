@@ -53,7 +53,7 @@ for i in range(trials2):
             break
 print ((trials2-failures2)/trials2*100, '%')
 
-siblings = ['A','A','B','B','C','C','D','D','E','E']
+siblings = ['AA','AB','BA','BB','CA','CB','DA','DB','EA','EB']
 
 failures3 = 0
 trials3 = 10
@@ -65,23 +65,23 @@ for i in range(trials3):
     shuffle(siblings)
     print(siblings)
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'AA':
+        if siblings[j] + siblings[j+1] == 'AAAB' or siblings[j] + siblings[j+1] == 'ABAA':
             failures3+=1
             break
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'BB':
+        if siblings[j] + siblings[j+1] == 'BABB' or siblings[j] + siblings[j+1] == 'BBBA':
             failures3+=1
             break
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'CC':
+        if siblings[j] + siblings[j+1] == 'CACB' or siblings[j] + siblings[j+1] == 'CBCA':
             failures3+=1
             break
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'DD':
+        if siblings[j] + siblings[j+1] == 'DADB' or siblings[j] + siblings[j+1] == 'DBDA':
             failures3+=1
             break
     for j in range(8):
-        if siblings[j] + siblings[j+1] == 'EE':
+        if siblings[j] + siblings[j+1] == 'EAEB' or siblings[j] + siblings[j+1] == 'EBEA':
             failures3+=1
             break
 
