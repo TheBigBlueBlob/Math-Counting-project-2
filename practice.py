@@ -44,11 +44,11 @@ for i in range(trials2):
             failures2+=1
             break
 
-        if  people[13] + people[14] == 'TS':
+        if  people[13] + people[14] == 'TS' or people[13] + people[14] == 'ST':
             failures2+=1
             break     
         
-        if people[0] + people[1] == 'ST':
+        if people[0] + people[1] == 'ST' or people[0] + people[1] == 'TS':
             failures2+=1
             break
 print ((trials2-failures2)/trials2*100, '%')
