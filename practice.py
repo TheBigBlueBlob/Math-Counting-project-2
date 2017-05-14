@@ -4,7 +4,7 @@ cards = ['J','J','J','J','Q','Q','Q','Q','K','K','K','K']
 
 failures = 0
 #heads = 0
-trials = 10
+trials = 10000
 
 for i in range(trials):
     
@@ -31,7 +31,7 @@ print('Heads =', heads,' Tails=', trials-heads)
 people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
 
 failures2 = 0
-trials2 = 10
+trials2 = 1
 
 
 
@@ -56,14 +56,14 @@ print ((trials2-failures2)/trials2*100, '%')
 siblings = ['AA','AB','BA','BB','CA','CB','DA','DB','EA','EB']
 
 failures3 = 0
-trials3 = 10
+trials3 = 1
 
 
 
 for i in range(trials3):
     
     shuffle(siblings)
-    print(siblings)
+    #print(siblings)
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'AAAB' or siblings[j] + siblings[j+1] == 'ABAA':
             failures3+=1
