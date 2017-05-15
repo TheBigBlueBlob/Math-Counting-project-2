@@ -4,7 +4,7 @@ cards = ['J','J','J','J','Q','Q','Q','Q','K','K','K','K']
 
 failures = 0
 #heads = 0
-trials = 10000
+trials = 1
 
 for i in range(trials):
     
@@ -31,7 +31,7 @@ print('Heads =', heads,' Tails=', trials-heads)
 people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
 
 failures2 = 0
-trials2 = 1
+trials2 = 10000
 
 
 
