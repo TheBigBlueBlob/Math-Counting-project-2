@@ -4,7 +4,7 @@ cards = ['J','J','J','J','Q','Q','Q','Q','K','K','K','K']
 
 failures = 0
 #heads = 0
-trials = 1
+trials = 3
 
 for i in range(trials):
     
@@ -15,7 +15,7 @@ for i in range(trials):
             failures+=1
             break
 
-print ((trials-failures)/trials*100, '%')
+#print ((trials-failures)/trials*100, '%')
 
 """
 
@@ -31,7 +31,7 @@ print('Heads =', heads,' Tails=', trials-heads)
 people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
 
 failures2 = 0
-trials2 = 10
+trials2 = 1000
 
 
 
@@ -85,7 +85,7 @@ for i in range(trials3):
             failures3+=1
             break
 
-print(failures3/trials3)
+#print(failures3/trials3)
 
 siblings2 = ['A','A','B','B','C','C','D','D','E','E']
 
@@ -119,5 +119,5 @@ for i in range(trials4):
             failures4+=1
             break
 
-print(failures4/trials4)
+#print(failures4/trials4)
 
