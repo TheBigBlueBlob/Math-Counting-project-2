@@ -31,7 +31,7 @@ print('Heads =', heads,' Tails=', trials-heads)
 people = ['T','T','T','S','S','S','S','S','S','S','S','S','S','S','S']
 
 failures2 = 0
-trials2 = 1000
+trials2 = 1
 
 
 
@@ -51,7 +51,7 @@ for i in range(trials2):
         if people[0] + people[1] == 'ST' or people[0] + people[1] == 'TS':
             failures2+=1
             break
-print ((trials2-failures2)/trials2*100, '%')
+#print ((trials2-failures2)/trials2*100, '%')
 
 siblings = ['AA','AB','BA','BB','CA','CB','DA','DB','EA','EB']
 
@@ -90,34 +90,33 @@ for i in range(trials3):
 siblings2 = ['A','A','B','B','C','C','D','D','E','E']
 
 failures4 = 0
-trials4 = 1
-
+trials4 = 3
 
 
 for i in range(trials4):
     
     shuffle(siblings2)
-    #print(siblings2)
+    print(siblings2)
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'AA':
             failures4+=1
-            break
+            
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'BB':
             failures4+=1
-            break
+            
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'CC':
             failures4+=1
-            break
+            
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'DD':
             failures4+=1
-            break
+            
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'EE':
             failures4+=1
-            break
+            
 
-#print(failures4/trials4)
+print(failures4/trials4)
 
