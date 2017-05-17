@@ -90,7 +90,7 @@ print(failures3/trials3)
 siblings2 = ['A','A','B','B','C','C','D','D','E','E']
 
 failures4 = 0
-trials4 = 10000
+trials4 = 1
 
 
 
