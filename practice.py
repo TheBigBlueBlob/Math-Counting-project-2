@@ -67,36 +67,36 @@ for i in range(trials3):
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'AAAB' or siblings[j] + siblings[j+1] == 'ABAA':
             failures3+=1
-            break
+            
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'BABB' or siblings[j] + siblings[j+1] == 'BBBA':
             failures3+=1
-            break
+            
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'CACB' or siblings[j] + siblings[j+1] == 'CBCA':
             failures3+=1
-            break
+            
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'DADB' or siblings[j] + siblings[j+1] == 'DBDA':
             failures3+=1
-            break
+            
     for j in range(8):
         if siblings[j] + siblings[j+1] == 'EAEB' or siblings[j] + siblings[j+1] == 'EBEA':
             failures3+=1
-            break
+            
 
-#print(failures3/trials3)
+print(failures3/trials3)
 
 siblings2 = ['A','A','B','B','C','C','D','D','E','E']
 
 failures4 = 0
-trials4 = 3
+trials4 = 1
 
 
 for i in range(trials4):
     
     shuffle(siblings2)
-    print(siblings2)
+    #print(siblings2)
     for j in range(8):
         if siblings2[j] + siblings2[j+1] == 'AA':
             failures4+=1
@@ -119,4 +119,3 @@ for i in range(trials4):
             
 
 print(failures4/trials4)
-
