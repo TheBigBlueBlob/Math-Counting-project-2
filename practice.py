@@ -56,7 +56,7 @@ print ((trials2-failures2)/trials2*100, '%')
 siblings = ['AA','AB','BA','BB','CA','CB','DA','DB','EA','EB']
 
 failures3 = 0
-trials3 = 10000
+trials3 = 1
 
 
 
